@@ -2,5 +2,25 @@
     xmlns="http://namespaces.zope.org/zope"
     xmlns:i18n="http://namespaces.zope.org/i18n"
     i18n_domain="sparc.filter">
+    
+    <utility
+        component=".expression.ExpressionFactory"
+        name="sparc.filter.expression"
+        />
+    
+    <utility
+        component=".expression.LinkedExpressionFactory"
+        name="sparc.filter.linked_expression"
+        />
+    
+    <utility
+        component=".expression.ExpressionGroupFactory"
+        name="sparc.filter.expression_group"
+        />
+    
+    <utility
+        provides=".IExpressionGroupMemberResolver"
+        factory=".resolver.ExpressionGroupMemberResolver"
+        />
 
 </configure>

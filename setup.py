@@ -42,6 +42,7 @@ setup(name='sparc.filter',
           'setuptools',
           'zope.interface',
           'zope.component',
+          'zope.schema'
           # -*- Extra requirements: -*-
       ],
       tests_require=TESTS_REQUIRE,
