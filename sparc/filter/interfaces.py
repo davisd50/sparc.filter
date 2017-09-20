@@ -1,5 +1,4 @@
 from zope import interface
-from zope.interface.interfaces import IAttribute
 from zope import schema as schema_
 
 class IExpressionGroupMember(interface.Interface):
